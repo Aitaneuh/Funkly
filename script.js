@@ -15,7 +15,7 @@ document.getElementById("heartBtn").addEventListener("click", () => {
     document.getElementById("func").value = "(x^2)^(1/3) + e/3 * sqrt(pi - x^2) * sin(10 * pi * x)"
     const expr = document.getElementById("func").value;
 
-    let values = calculate_values(expr)
+    let values = calculate_values(expr, 0.001, -4, 4)
     let xValues = values[0]
     let yValues = values[1]
 
