@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funkly</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Funkly</h1>
+
+    <div class="input-area">
+        <label for="func">f(x) =</label>
+        <input id="func" type="text" value="sin(x) + x^2">
+
+        <button id="plotBtn">Plot</button>
+        <button id="heartBtn">Heart Equation</button>
+        <button id="resetBtn">Reset</button>
+
+    </div>
+
+    <div id="plot-container">
+        <div id="plot"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
