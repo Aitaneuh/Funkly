@@ -2,7 +2,7 @@
 # Funkly
 *A lightweight client-side math function plotter built with Vanilla JavaScript + Math.js + Plotly.js.*
 
-![Preview Screenshot](image/preview.png)  
+![Preview Screenshot](image/logo.png)  
 
 ---
 
@@ -109,3 +109,9 @@ Try these:
 - `(x^2)^(1/3) + e/3 * sqrt(pi - x^2) * sin(10*pi*x)` (heart-like curve)
 - `log(10, x)`
 - `sqrt(abs(x)) * sin(5*x)`
+
+## Preview
+
+Here is a preview of the heart-like curve :
+
+![heart-like-curve](image/preview.png)
