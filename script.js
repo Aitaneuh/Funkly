@@ -17,9 +17,27 @@ document.getElementById("plotBtn").addEventListener("click", () => {
 
 document.getElementById("heartBtn").addEventListener("click", () => {
     document.getElementById("func").value = "(x^2)^(1/3) + e/3 * sqrt(pi - x^2) * sin(10 * pi * x)"
-    document.getElementById("minVal").value = -4
-    document.getElementById("maxVal").value = 4
+    document.getElementById("minVal").value = -5
+    document.getElementById("maxVal").value = 5
     document.getElementById("delta").value = 0.001
+    const expr = document.getElementById("func").value;
+    const minVal = parseFloat(document.getElementById("minVal").value);
+    const maxVal = parseFloat(document.getElementById("maxVal").value);
+    const delta = parseFloat(document.getElementById("delta").value);
+
+
+    let values = calculate_values(expr, delta, minVal, maxVal)
+    let xValues = values[0]
+    let yValues = values[1]
+
+    draw_plot(expr, xValues, yValues)
+});
+
+document.getElementById("gaussBtn").addEventListener("click", () => {
+    document.getElementById("func").value = "1/(sqrt(2 * pi)) * e^(-1 * (x^2/2^2))"
+    document.getElementById("minVal").value = -5
+    document.getElementById("maxVal").value = 5
+    document.getElementById("delta").value = 0.01
     const expr = document.getElementById("func").value;
     const minVal = parseFloat(document.getElementById("minVal").value);
     const maxVal = parseFloat(document.getElementById("maxVal").value);
