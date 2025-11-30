@@ -14,12 +14,22 @@
     <h1>Funkly</h1>
 
     <div class="input-area">
-        <label for="func">f(x) =</label>
-        <input id="func" type="text" value="sin(x) + x^2">
+        <div id="top-div">
+            <label for="func">f(x) =</label>
+            <input id="func" class="input" type="text" value="sin(100 * x) * x^2">
 
-        <button id="plotBtn">Plot</button>
-        <button id="heartBtn">Heart Equation</button>
-        <button id="resetBtn">Reset</button>
+            <button id="plotBtn">Plot</button>
+            <button id="heartBtn">Heart Equation</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div id="bottom-div">
+            <label for="minVal">min Value =</label>
+            <input id="minVal" class="input value" type="text" value="-10">
+            <label for="maxVal">max Value =</label>
+            <input id="maxVal" class="input value" type="text" value="10">
+            <label for="delta">delta =</label>
+            <input id="delta" class="input value" type="text" value="0.01">
+        </div>
 
     </div>
 
@@ -27,7 +37,7 @@
         <div id="plot"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
